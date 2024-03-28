@@ -1,7 +1,7 @@
 # workflow_1
 
 ## m1_main:
-# Store all paths
+Store all paths
 
 ## m2_xml_parser:
 ## Extract title, abstract, iclm, claims, and CPC classes in separate columns
