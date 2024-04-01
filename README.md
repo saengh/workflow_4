@@ -16,17 +16,7 @@ Create another combined column CTB_CPC containg text from CTB and CPC class defi
 
 ## m4_preprocessor:
 Do conventional preprocessing to get word, phrase, and sentence tokens on all columns
-In subsequent modules, both word and phrase tokens are used independently
+Convert CTB and CTB_CPC word tokens back to sentences and generate TF-IDF document term matrix
 
-## m5_lda_preprocessor:
-Perform LDA modeling on by treating each row as an entire dataset in itself and each column (title, abstract, iclm, and claims) as a separate document
-LDA should give topic names for each document which would serve as tokens for next steps
-
-## m6_document_token_matrix:
-Convert dataframe to a matrix where rows are document indices, columns are unique topics by LDA from entire dataset, and probabilities of topics are values in matrix
-
-## m7_jsd:
-Find similarity between pair of documents based on similarity between their probability similarities
-
-## m8_clustering:
-Perform clustering using HDBSCAN
+## m5_nmf_topic_modeler:
+Perform NMF modeling
