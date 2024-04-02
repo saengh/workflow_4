@@ -34,7 +34,7 @@ tfidf_vectorizer = TfidfVectorizer(ngram_range=(1,2), max_df=0.95, min_df=0.05, 
 tfidf_matrix = tfidf_vectorizer.fit_transform(df['CTB_word_tokens'])
 feature_names = tfidf_vectorizer.get_feature_names_out()
 
-nmf_model = NMF(n_components=25, random_state=100)
+nmf_model = NMF(n_components=5, random_state=100)
 nmf_model.fit(tfidf_matrix)
 
 topn_words = 10
